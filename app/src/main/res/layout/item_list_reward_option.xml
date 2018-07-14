@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="@color/colorAccent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_gravity="start"
+        android:textSize="20dp"
+        android:layout_weight="2"
+        android:gravity="start"
+        android:layout_width="wrap_content"
+        android:id="@+id/tvAccountID"
+        android:textColor="#1b1b1b"
+        android:fontFamily="@font/roboto_black"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:id="@+id/tvPoints"
+            android:textColor="#1b1b1b"
+            android:fontFamily="@font/roboto_black"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/trophy"/>
+    </LinearLayout>
+    <com.rey.material.widget.Button
+        style="@style/Material.Drawable.Ripple.Wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_button_black"
+        android:padding="10dp"
+        android:text="REDEEM REWARD"
+        android:id="@+id/btnRedeem"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:fontFamily="@font/roboto_black"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rd_enable="true"
+        tools:ignore="SpUsage" />
+    <com.rey.material.widget.Button
+        style="@style/Material.Drawable.Ripple.Wave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/btnEarnPoints"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_button_black"
+        android:padding="10dp"
+        android:text="EARN POINTS"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_black"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rd_enable="true"
+        tools:ignore="SpUsage" />
+    <com.rey.material.widget.Button
+        style="@style/Material.Drawable.Ripple.Wave"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_button_black"
+        android:padding="10dp"
+        android:text="SHARE POINTS"
+        android:textColor="#fff"
+        android:textSize="30dp"
+        android:fontFamily="@font/roboto_black"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rd_enable="true"
+        tools:ignore="SpUsage" />
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

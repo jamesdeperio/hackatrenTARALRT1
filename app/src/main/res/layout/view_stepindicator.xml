@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/stepIndicator"
+        android:layout_height="50dp">
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btnPrev"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|center"
+            android:background="@color/transparent"
+            android:fontFamily="@font/roboto_light"
+            android:text="PREV"
+            android:textColor="@color/colorAccent"
+            app:rd_enable="true"
+            tools:ignore="HardcodedText" />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btnNext"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center"
+            android:background="@color/transparent"
+            android:fontFamily="@font/roboto_light"
+            android:text="NEXT"
+            android:textColor="@color/colorAccent"
+            app:rd_enable="true"
+            tools:ignore="HardcodedText" />
+
+    </FrameLayout>
+</merge>

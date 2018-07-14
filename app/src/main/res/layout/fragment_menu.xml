@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/menu"
+    tools:context=".appmodule.menu.MenuController">
+
+    <com.rey.material.widget.Button
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/rounded_button"
+        android:padding="0dp"
+        android:text="@string/sign_in"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:fontFamily="@font/roboto_black"
+        android:id="@+id/btnSignIn"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/Material.Drawable.Ripple.Wave"
+        app:rd_enable="true"
+        tools:ignore="SpUsage" />
+
+    <com.rey.material.widget.Button
+        android:id="@+id/btnRegister"
+        style="@style/Material.Drawable.Ripple.Wave"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="#00ffffff"
+        android:text="@string/create_account"
+        android:textAllCaps="false"
+        android:textColor="#ff9900"
+        android:textSize="12dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/socialLoginContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rd_enable="true"
+        tools:ignore="SpUsage" />
+
+    <LinearLayout
+        android:id="@+id/socialLoginContainer"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content">
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/btnSignInWithGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

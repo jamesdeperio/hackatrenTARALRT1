@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1084434669659",
+    "firebase_url": "https://hacktren2018.firebaseio.com",
+    "project_id": "hacktren2018",
+    "storage_bucket": "hacktren2018.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1084434669659:android:0069bca330a25bf6",
+        "android_client_info": {
+          "package_name": "nyxdev.hackatren.taralrt1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1084434669659-tmgubfolusp9g14um0g54com71mtvq88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiqZK0lBCLKvaGR6ggewszgAsORE6Z4gc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

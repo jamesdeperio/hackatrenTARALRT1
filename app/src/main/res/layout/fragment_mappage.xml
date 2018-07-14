@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.otaliastudios.zoom.ZoomLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:horizontalPanEnabled="true"
+    app:verticalPanEnabled="true"
+    app:zoomEnabled="true"
+    app:minZoom="1"
+    app:minZoomType="zoom"
+    app:maxZoom="20.0"
+    app:maxZoomType="zoom"
+    tools:context=".appmodule.mappage.MapPageController">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/map"/>
+</com.otaliastudios.zoom.ZoomLayout>

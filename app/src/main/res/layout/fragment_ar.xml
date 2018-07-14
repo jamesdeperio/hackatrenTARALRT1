@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".appmodule.ar.ARController">
+    <FrameLayout
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <com.rey.material.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"
+        app:fab_backgroundColor="#3A2B50"
+        app:fab_iconSrc="@drawable/ic_close_black_24dp"
+        app:rd_enable="true"
+        style="@style/Material.Drawable.Ripple.Wave"
+        android:id="@+id/btnClose"
+        />
+</FrameLayout>

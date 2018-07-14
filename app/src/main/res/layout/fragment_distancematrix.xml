@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jdp.pocketlib.view.PocketNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffb30e"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".appmodule.distancematrix.DistanceMatrixController">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_black"
+            android:textSize="20dp"
+            android:textColor="#121212"
+            android:text="Current Station:"/>
+        <com.roughike.swipeselector.SwipeSelector
+            android:id="@+id/currentStationSelector"
+            android:value="@+value/swipeSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:swipe_indicatorInActiveColor="#212121"
+            app:swipe_indicatorActiveColor="#ff6f00"
+            app:swipe_customFontPath="roboto__bold.ttf" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_black"
+            android:textSize="20dp"
+            android:textColor="#121212"
+            android:text="Destination Station:"/>
+        <com.roughike.swipeselector.SwipeSelector
+            android:value="@+value/swipeSelector"
+            android:id="@+id/destinationStationSelector"
+            android:layout_width="match_parent"
+            app:swipe_indicatorInActiveColor="#212121"
+            app:swipe_indicatorActiveColor="#ff6f00"
+            app:swipe_customFontPath="roboto__bold.ttf"
+            android:layout_height="wrap_content" />
+        <com.rey.material.widget.Button
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/btnCheck"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/rounded_button_black"
+            android:padding="10dp"
+            android:text="CHECK"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:fontFamily="@font/roboto_black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:rd_enable="true"
+            tools:ignore="SpUsage" />
+        <TextView
+            android:layout_marginStart="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:fontFamily="@font/roboto_black"
+            android:textSize="20dp"
+            android:id="@+id/tvDistance"
+            android:textColor="#121212"
+            android:text="DISTANCE: N/A"/>
+        <TextView
+            android:layout_marginStart="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:id="@+id/tvTime"
+            android:fontFamily="@font/roboto_black"
+            android:textSize="20dp"
+            android:textColor="#121212"
+            android:text="ESTIMATED TIME: N/A"/>
+        <TextView
+            android:layout_marginStart="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:id="@+id/tvFare"
+            android:fontFamily="@font/roboto_black"
+            android:textSize="20dp"
+            android:textColor="#121212"
+            android:text="FARE: N/A"/>
+    </LinearLayout>
+</jdp.pocketlib.view.PocketNestedScrollView>

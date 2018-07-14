@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="#1d1d1d"
+        android:gravity="center"
+        android:text="Congratulations!"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:id="@+id/lottieCamera"
+        android:layout_gravity="center"
+        app:lottie_rawRes="@raw/trophy"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_height="250dp" />
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#29005b"
+        android:textSize="20dp"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center"
+        android:text="You have earned 1 point."/>
+    <com.rey.material.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_button"
+        android:padding="0dp"
+        android:text="CLAIM"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:fontFamily="@font/roboto_black"
+        android:id="@+id/btnAccept"
+        style="@style/Material.Drawable.Ripple.Wave"
+        app:rd_enable="true"
+        tools:ignore="SpUsage" />
+</LinearLayout>
+</android.support.v7.widget.CardView>

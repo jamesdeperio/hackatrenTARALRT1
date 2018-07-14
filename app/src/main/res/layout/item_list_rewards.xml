@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="1dp"
+    android:layout_height="wrap_content">
+    <com.rey.material.widget.LinearLayout
+        android:layout_width="match_parent"
+        style="@style/Material.Drawable.Ripple.Wave"
+        app:rd_enable="true"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ticket"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="rewards title"
+            android:textColor="#1d1d1d"
+            android:id="@+id/tvReward"
+            android:textSize="20dp"
+            android:fontFamily="@font/roboto"
+            android:layout_margin="15dp"/>
+    </com.rey.material.widget.LinearLayout>
+
+</android.support.v7.widget.CardView>

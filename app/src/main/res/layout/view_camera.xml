@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <FrameLayout
+       android:id="@+id/cameraLayout"
+       android:focusable="true"
+       android:visibility="gone"
+       android:clickable="true"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:id="@+id/camera"
+           android:background="#000"
+           android:layout_height="match_parent" />
+       <FrameLayout
+           android:layout_width="250dp"
+           android:background="@drawable/scanner"
+           android:id="@+id/scanner"
+           android:layout_gravity="center"
+           android:layout_marginTop="-40dp"
+           android:layout_height="250dp" />
+       <com.airbnb.lottie.LottieAnimationView
+           android:layout_width="250dp"
+           android:id="@+id/lottieCamera"
+           android:layout_gravity="center"
+           app:lottie_rawRes="@raw/success"
+           app:lottie_loop="false"
+           app:lottie_autoPlay="false"
+           android:visibility="gone"
+           android:layout_marginTop="-40dp"
+           android:layout_height="250dp" />
+       <com.rey.material.widget.FloatingActionButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom|center"
+           android:layout_marginBottom="80dp"
+           app:fab_backgroundColor="#3A2B50"
+           app:fab_iconSrc="@drawable/ic_close_black_24dp"
+           app:rd_enable="true"
+           style="@style/Material.Drawable.Ripple.Wave"
+           android:id="@+id/btnClose"
+           />
+   </FrameLayout>
+</merge>

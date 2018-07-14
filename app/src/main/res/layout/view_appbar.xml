@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="50dp">
+        <com.rey.material.widget.ImageButton
+            android:id="@+id/btnBack"
+            style="@style/Material.Drawable.Ripple.Wave"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="start|center"
+            android:background="@color/transparent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/back"
+            app:rd_enable="true" />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="TITLE"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
+</merge>
